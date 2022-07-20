@@ -2,6 +2,13 @@
 <body>
 </body>
 <script>
+  let textinp = elt.document.getElementById("textInp");
+  if(elt.document.getElementById("bSet").mousePressed) {
+    window.localStorage.setItem(textinp.value());
+  }
   
+  if(elt.document.getElementById("bGet").mousePressed) {
+    console.log(window.localStorage.getItem(textInp));
+  }
 </script>
 </html>
