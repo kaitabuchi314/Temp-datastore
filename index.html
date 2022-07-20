@@ -1,14 +1,19 @@
 <html>
 <body>
+  <h1>Temparary Storage</h1>
+  <input type="text" id="textInp" name="What to store?" required
+       minlength="4" maxlength="8" size="10">
+  <button id="bSet">Set</button>
+  <button id="bGet">Get</button>
 </body>
 <script>
   let textinp = elt.document.getElementById("textInp");
-  if(elt.document.getElementById("bSet").mousePressed) {
+  function elt.document.getElementById("bSet").mousePressed() {
     window.localStorage.setItem(textinp.value());
   }
   
-  if(elt.document.getElementById("bGet").mousePressed) {
-    console.log(window.localStorage.getItem(textInp));
+  function elt.document.getElementById("bGet").mousePressed() {
+    console.log(window.localStorage.getItem(textInp.value));
   }
 </script>
 </html>
